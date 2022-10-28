@@ -12,21 +12,24 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<BaseLayout title = "Blog">
-  <ul>
-    <!--List the array of astronaut info-->
-    {page.data.map(( post ) => (
-     <HorizontalCard
-        title={post.frontmatter.title}
-        img={post.frontmatter.heroImage}
-        desc={post.frontmatter.description}
-        url={post.url}
-		target="_self"
-      />
-	  <div class="divider my-0"></div>
-
-    ))}
-  </ul>
+<BaseLayout title="Blog">
+    <ul>
+        <!--List the array of astronaut info-->
+        {
+            page.data.map((post) => (
+                <>
+                    <HorizontalCard
+                        title={post.frontmatter.title}
+                        img={post.frontmatter.heroImage}
+                        desc={post.frontmatter.description}
+                        url={post.url}
+                        target="_self"
+                    />
+                    <div class="divider my-0" />
+                </>
+            ))
+        }
+    </ul>
 
 
     <div class="flex justify-between">
