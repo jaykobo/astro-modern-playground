@@ -4,7 +4,6 @@ import HorizontalCard from '../components/HorizontalCard.astro';
 
 import '@fontsource/merriweather/700.css';
 import '@fontsource/merriweather/900.css';
-import '@fontsource/open-sans/700.css';
 
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
     (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
