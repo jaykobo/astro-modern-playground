@@ -17,6 +17,8 @@
         "@astrojs/rss": "^1.0.1",
         "@astrojs/sitemap": "^1.0.0",
         "@astrojs/tailwind": "^1.0.1",
+        "@fontsource/merriweather": "^4.5.14",
+        "@fontsource/open-sans": "^4.5.13",
         "astro": "^1.2.3",
         "daisyui": "^2.27.0"
     },
