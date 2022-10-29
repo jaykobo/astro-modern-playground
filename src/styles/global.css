@@ -3,10 +3,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.time-line-container > div:last-child .education__time > .education__line {
-    display: none;
+.btn {
+    @apply font-bold font-mono;
 }
 
-.btn {
-    @apply font-bold;
+.time-line-container > div:last-child .education__time > .education__line {
+    display: none;
 }
