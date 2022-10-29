@@ -3,6 +3,6 @@
     "editor.formatOnSave": true,
     "editor.quickSuggestions": {
         // for Tailwindcss Extention
-        "strings": "on"
+        "strings": true
     }
 }
